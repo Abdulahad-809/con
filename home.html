@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This is your page title that appears on the browser window or tab -->
+    <title>Unit Conversions</title>
+  </head>
+  <body>
+    <section id="home">
+        <!-- This is the main heading -->
+        <header>
+            <nav>
+                <div class="logo">
+                    CONVO-XR
+                </div>
+                <div class="menu">
+                    <a  href="index.html">Home</a>
+                    <a class="active" href="home.html">Converter</a>
+                    <a href="contact.HTML">Contact</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">Register</a>
+                </div>
+            </nav>
+            </header>
+        <nav>
+            <div class="navigation">
+                  <!-- Button for redirecting users to the temperature section -->
+                  <a href="#temperature"><button>Temperature</button></a>
+                 <!-- Button for redirecting users to the weight section -->
+                <a href="#weight"><button>Weight</button></a>
+                 <!-- Button for redirecting users to the distance section -->
+                <a href="#distance"><button>Distance</button></a>
+             </div>
+        </nav>
+    </section>
+
+    <div id="all-conversion-sections">
+        <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
+      
+        <section id="temperature">
+            <!-- Temparature conversion section -->
+            <div class="temp">
+                <figure class="temp1">
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px"/>
+                    <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+                </figure>
+
+                <article class="temp-buttons">
+                    <!-- This contains the specific elements for temperature conversion -->
+                    <fieldset class="tempfield">
+                        <legend>Temperature</legend>
+                        <!-- Label for Temperature input -->
+                        <label for="Temperature">Celsius</label> <br/>
+
+                        <input type="number" id="c"> <br/>
+
+                      
+                        <!-- The conversion button -->
+                        <button id="temperature"> Convert </button> <br/>
+
+                      
+                        <!-- Label for Temperature output -->
+                        <input type="number" id="f"> <br/>
+
+                        <label for="Temperature">Fahrenheit</label>
+                    </fieldset>
+                </article>
+            <div class="aside-temp">
+                <aside>
+                    To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
+                </aside>
+               </div>
+            </div>
+        </section>
+<hr>
+        <section class="weight">
+            <!-- Weight conversion section -->
+            <div class="wgt">
+              <figure>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
+                <div class="figcap"><figcaption>Kilogram to Pound Conversion</figcaption>
+              </div>
+                </figure>
+          
+              <article class="wgtcol">
+                <!-- This contains the specific elements for weight conversion -->
+                <fieldset class="weightfield">
+                    <legend>Weight</legend>
+                    <!-- Label for Weight input -->
+                    <label for="Weight">Kilograms</label> <br/>
+
+                    <input type="number" id="kg"> <br/>
+
+            
+                    <!-- The conversion button -->
+                    <button id="weight"> Convert </button> <br/>
+
+            
+                    <!-- Label for Weight output -->
+                    <input type="number" id="lbs"> <br/>
+
+                    <label for="Weight">Pounds</label>
+                </fieldset>
+              </article>
+          <div class="wgtaside">
+              <aside>
+                To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
+              </aside>
+              </div
+            </div>
+        </section>
+<hr>
+        <section class="distance">
+            <!-- Distance conversion section -->
+            <div class="dst">
+              <figure>
+                <img src="distance.jpg" width="200px"/>
+              <div class="dstfig">  <figcaption>Kilometer to Mile Conversion</figcaption>
+              </div>
+            </figure>
+          
+              <article>
+                <!-- This contains the specific elements for distance conversion -->
+                <fieldset class="feilddst">
+                    <legend>Distance</legend>
+                    <!-- Label for Distance input -->
+                    <label for="Distance">Kilometers</label> <br/>
+
+                    <input type="number" id="km"> <br/>
+
+                    <!-- The conversion button -->
+                    <button id="distance"> Convert </button> <br/>
+
+                    <!-- Label for Distance output -->
+                    <input type="number" id="m"> <br/>
+
+                    <label for="Distance">Miles</label>
+                </fieldset>
+              </article>
+<div class="dstaside">
+              <aside>
+                To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
+              </aside></div>
+            </aside>
+            </div>
+        </section>
+    </div>
+
+    <div class="go-home">
+        <a href="#home">
+             <img class="home" src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>   
+            
+        </a>
+    </div>
+
+    <footer>&copy all credits to Abdul Ahad</footer>
+    <style>
+.header{
+    width: 20%;
+    height: 30%;
+    text-align: center;
+    font-size: 48;
+    word-spacing: 5px;
+    letter-spacing:5px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    width:20%;
+    height: 100%;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    transition:0.6s linear;
+
+   
+}
+
+nav{
+            width:100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            left:0%;
+            top:0%;
+            width: 0%;
+            height:100% ;
+            border-bottom: 2px solid rgba(124, 215, 238, 0.555);
+            transition: 0.4s linear;
+        }
+        .menu a:hover::before{
+            width: 90%;
+        }    
+        .active{
+            width: 100%;
+            height:100% ;
+            border-bottom: 2px solid  rgba(124, 215, 238, 0.555);
+        }
+        .register a{
+            text-decoration: none;
+            color:white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: rgba(124, 215, 238, 0.555);
+            border-radius: 8px;
+            transition: 0.4s linear;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid  rgba(124, 215, 238, 0.555);
+        }    
+legend{ margin-left: 570px;
+    font-size: 20px;
+}
+.tempfield label {
+    margin-left: 560px;
+    font-size: 18px;
+}
+.tempfield input {
+    margin-left: 560px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.tempfield button {
+    margin-left: 620px;
+    background-color: rgb(41, 99, 107,0.5);
+    border-radius: 9px;
+    border:0px solid;
+    color: aliceblue;
+    transition: 0.4s linear;
+   
+}
+.tempfield button:hover{
+    background: transparent;
+            border: 1px solid  rgba(124, 215, 238, 0.555);
+            color: aliceblue;
+}
+
+.weightfield label {
+    margin-left: 560px;
+    font-size: 18px;
+}
+.weightfield input {
+    margin-left: 560px;
+}
+.weightfield button {
+    margin-left: 620px;
+}
+.weightfield input {
+    margin-left: 560px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.weightfield button {
+    margin-left: 620px;
+    background-color: rgb(17, 63, 133,0.5);
+    border-radius: 9px;
+    border:0px solid;
+    color: aliceblue;
+    transition: 0.4s linear;
+   
+}
+.weightfield button:hover{
+    background: transparent;
+            border: 1px solid  rgba(124, 215, 238, 0.555);
+            color: aliceblue;
+}
+.feilddst label {
+    margin-left: 560px;
+    font-size: 18px;
+}
+.feilddst input {
+    margin-left: 560px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.feilddst button {
+    margin-left: 620px;
+}
+
+.feilddst button {
+    margin-left: 620px;
+    background-color:rgb(82, 158, 184,0.5);
+    border-radius: 9px;
+    border:0px solid;
+    color: aliceblue;
+    transition: 0.4s linear;
+}
+.feilddst button:hover{
+    background: transparent;
+            border: 1px solid rgb(82, 158, 184,0.5);
+            color: aliceblue;
+}
+
+.temp1 img{
+    height: 120px;
+    width: 170px;
+}
+figcaption{
+    margin-left: 470px;
+    font-size:25px;
+}
+footer{
+    margin-left: 580px;
+}
+  .navigation{
+color:brown;
+text-align: center;
+  }
+.navigation a{
+    padding-left: 30px;    
+}
+.navigation a button{
+    background: rgba(124, 215, 238, 0.555);
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0px solid;
+    transition: 0.2s linear;
+}
+.navigation a button:hover{
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid rgba(124, 215, 238, 0.555);
+}
+.temp-buttons {
+    background-color: rgb(41, 99, 107,0.5);
+    
+}
+.aside-temp{
+    color:lightblue;
+}
+
+.wgtcol{
+    background-color: rgb(17, 63, 133,0.5);
+}
+.wgtaside{
+    color: rgb(56, 144, 216);
+}
+
+.feilddst{
+    background-color:rgb(82, 158, 184,0.5);
+}
+.dstaside{
+    color:lightblue;
+}
+.home{
+    background-color: rgb(255, 255, 255,1);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+aside{
+    margin-left: 240px;
+}
+ body {
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('landscape.avif');
+background-repeat: no-repeat;
+  background-attachment: fixed; 
+  font-family: sans-serif;
+  background-size: cover;
+  color:white;
+  margin-top: -2px;
+  
+ }
+
+    </style>
+  </body>
+</html>
